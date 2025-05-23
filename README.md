@@ -114,7 +114,7 @@ Response:
 
 3. Cancel Ticket
 
-DELETE /api/v1/tickets/cancel/:id
+POST /api/v1/tickets/cancel/:id
 
 Response:
 
