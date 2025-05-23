@@ -1,6 +1,6 @@
 Clone the Repository
 
-git clone https://github.com/your-username/railway-ticket-reservation.git
+git clone  https://github.com/SumanJha2000/railway-ticket-reservation.git
 cd railway-ticket-reservation
 
 Install Dependencies
@@ -44,21 +44,15 @@ CREATE TABLE berth_allocations (
 
 Configure Database Connection
 
-In src/db.js, update your database credentials:
+## 🔐 Environment Variables
 
-const mysql = require('mysql2/promise');
+Create a `.env` file in the **project root**:
 
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'your-username',
-  password: 'your-password',
-  database: 'railway',
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
-});
-
-module.exports = pool;
+DB_HOST=localhost
+DB_USER=your-mysql-username
+DB_PASSWORD=your-mysql-password
+DB_NAME=railway_db
+PORT=3000
 
 🚀 Running the Application
 
