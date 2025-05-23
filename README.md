@@ -11,8 +11,8 @@ Set up the Database
 
 Create a MySQL database:
 
-CREATE DATABASE railway;
-USE railway;
+CREATE DATABASE railway_db;
+USE railway_db;
 
 -- passengers table
 CREATE TABLE passengers (
