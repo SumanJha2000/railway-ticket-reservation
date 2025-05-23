@@ -74,7 +74,7 @@ docker run -p 3000:3000 railway-booking-app
 
 1. Book Ticket
 
-POST /api/tickets/book
+POST /api/v1/tickets/book
 
 Request Body:
 
@@ -99,7 +99,7 @@ Response:
 
 2. Get Available Seats
 
-GET /api/seats/availability
+GET /api/v1/tickets/available
 
 Response:
 
@@ -114,7 +114,7 @@ Response:
 
 3. Cancel Ticket
 
-DELETE /api/tickets/:id
+DELETE /api/v1/tickets/cancel/:id
 
 Response:
 
@@ -127,7 +127,7 @@ Response:
 
 4. Get All Booked Tickets
 
-GET /api/tickets
+GET /api/v1/tickets/booked
 
 Response:
 
